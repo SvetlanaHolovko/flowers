@@ -1,0 +1,544 @@
+@font-face {
+font-family: 'Gotham Pro Light';
+src: url('../fonts/GothamPro-Light.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Gotham Pro Medium';
+src: url('../fonts/GothamPro-Medium.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Gotham Pro';
+src: url('../fonts/GothamPro.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+*, *:after, *:before {
+   box-sizing: border-box;
+}
+body {
+   background-color: #292929;
+   color: #fff;
+   font-family: 'Gotham Pro', sans-serif;
+   margin: 0;
+}
+
+/* HEADER */
+.header {
+   padding-top: 50px;
+}
+.header-description {
+font-family: "Gotham Pro Light", sans-serif;
+font-size: 12px;
+font-weight: 300;
+letter-spacing: 0.12px;
+text-align: left;
+}
+.text-color-red {
+   color: #ff3469;
+   font-family: "Gotham Pro Medium", sans-serif;
+   font-weight: 500;
+   letter-spacing: 0.12px;
+}
+.header-contacts {
+   text-align: right;
+}
+.header-phone {
+   display: block;
+   color: #ffffff;
+   text-decoration: none;
+   font-size: 20px;
+   font-weight: 500;
+   letter-spacing: 0.2px;
+   transition: color 0.2s linear;
+}
+.header-phone:hover {
+   color: rgb(212, 19, 77);
+}
+.header-info {
+   display: block;
+   font-size: 12px;
+   font-weight: 400;
+   letter-spacing: 0.12px;
+   margin-top: 7px;
+}
+.callback {
+   display: block;
+   color: #ff3469;
+   font-size: 16px;
+   font-weight: 400;
+   letter-spacing: 0.16px;
+   margin-top: 16px;
+   transition: text-decoration 0.2s linear, color 0.2s linear;
+}
+.callback:hover {
+   color: rgb(212, 19, 77);
+   text-decoration: none;
+}
+
+/* HERO */
+.hero {
+   padding-bottom: 77px;
+   padding-top: 100px;
+   text-align: center;
+   border-bottom: 1px solid #4c4c4c;
+}
+.hero-title {
+   font-family: "Gotham Pro Medium", sans-serif;
+   font-size: 34px;
+   font-weight: 500;
+   text-transform: uppercase;
+   letter-spacing: 0.34px;
+   max-width: 692px;
+   margin: auto;
+   margin-bottom: 33px;
+}
+.hero-description {
+   font-size: 18px;
+   font-weight: 300;
+   text-transform: uppercase;
+   font-family: "Gotham Pro Light", sans-serif;
+   letter-spacing: 0.18px;
+   line-height: 1.6;
+   max-width: 590px;
+   margin: auto;
+}
+.hero-cta {
+   display: block;
+   font-size: 19px;
+   font-weight: 400;
+   text-transform: uppercase;
+   letter-spacing: 0.19px;
+}
+
+.flowers-slider {
+   width: 100%;
+   text-align: center;
+   margin-bottom: 83px;
+   margin-top: 100px;
+}
+:root {
+   --swiper-navigation-size: 18px;
+}
+.swiper-button-prev, .swiper-button-next {
+   color: #f24841;
+   padding: 15px;
+}
+
+.button {
+   display: inline-block;
+   color: #fff;
+   background-color: #ff2e55;
+   font-size: 18px;
+   font-weight: 500;
+   text-align: center;
+   text-transform: uppercase;
+   letter-spacing: 0.18px;
+   text-decoration: none;
+   padding: 30px 65px;
+   margin-top: 36px;
+   cursor: pointer;
+   border: none;
+   transition: background-color 0.2s linear;
+}
+.button:hover {
+   background-color: rgb(212, 19, 77);
+}
+
+/* REVIEWS */
+.reviews {
+   padding-top: 100px;
+   padding-bottom: 50px;
+}
+.reviews-slider {
+   margin-top: 98px;
+}
+.review-slide {
+   padding-left: 40px;
+   padding-right: 40px;
+}
+.review-image {
+   width: 220px;
+   height: 220px;
+   flex-shrink: 0;
+   border-radius: 50%;
+   overflow: hidden;
+   position: relative;
+   margin-right: 52px;
+}
+.review-image:before {
+   content: '';
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.6);
+   position: absolute;
+}
+.review-image > * {
+   position: relative;
+}
+.review-name {
+   font-size: 20px;
+   font-weight: 500;
+   text-align: center;
+   font-family: "Gotham Pro Medium", sans-serif;
+   letter-spacing: 0.2px;
+   margin-bottom: 5px;
+}
+.review-city {
+   font-family: "Gotham Pro Light", sans-serif;
+   font-size: 18px;
+   font-weight: 400;
+   letter-spacing: 0.18px;
+}
+.review-image-1 {
+   background: #000 url('../img/reviews/review-1.jpg') no-repeat;
+}
+.review-image-2 {
+   background: #000 url('../img/reviews/review-2.jpg') no-repeat;
+}
+.review-text {
+   font-size: 18px;
+   font-weight: 400;
+   text-align: left;
+   letter-spacing: 0.18px;
+   line-height: 1.4;
+}
+.review-link {
+   color: #f24841;
+   font-size: 18px;
+   font-weight: 400;
+   text-align: left;
+   letter-spacing: 0.18px;
+   transition: text-decoration 0.2s linear, color 0.2s linear;
+}
+.review-link:hover {
+   color: rgb(212, 19, 77);
+   text-decoration: none;
+}
+
+.section-title {
+   font-size: 30px;
+   font-weight: 500;
+   text-align: center;
+   text-transform: uppercase;
+   letter-spacing: 0.3px;
+
+}
+
+/* ADVANTAGES */
+.advantages {
+   text-align: center;
+   padding-bottom: 100px;
+   padding-top: 50px;
+   border-bottom: 1px solid #4c4c4c;
+}
+.advantages-wrapper {
+   min-height: 85px;
+   margin-bottom: 30px;
+}
+.advantages-title {
+   font-size: 20px;
+   font-weight: 500;
+   line-height: 25px;
+   text-align: center;
+   text-transform: uppercase;
+   letter-spacing: 0.2px;
+}
+
+/* GOODS */
+.goods {
+   padding-top: 100px;
+   padding-bottom: 100px;
+}
+.section-description {
+   font-size: 18px;
+   text-align: center;
+   letter-spacing: 0.18px;
+}
+/* CARD */
+.card {
+   text-align: center;
+   border: 3px solid #fff;
+   padding: 33px 35px 30px 35px;
+   margin-top: 27px;
+}
+.card-title {
+   margin-top: 23px;
+   margin-bottom: 20px;
+   text-transform: uppercase;
+}
+.card-label {
+   font-size: 14px;
+   display: block;
+   margin-top: 20px;
+   margin-bottom: 7px;
+}
+.color-label {
+   width: 20px;
+   height: 20px;
+   cursor: pointer;
+}
+.color-input {
+   opacity: 0;
+   visibility: hidden;
+   position: absolute;
+   z-index: -9;
+}
+.color-label.white {
+   background-color: #fff;
+}
+.color-label.beige {
+   background-color: #f7b496;
+}
+.color-label.pink {
+   background-color: #ed366e;
+}
+.color-label.red {
+   background-color: #ff0000;
+}
+.color-label.blue {
+   background-color: #12129d;
+}
+.counter-input {
+   width: 40px;
+   height: 40px;
+   border: 2px solid #fff;
+   text-align: center;
+   color: #fff;
+   background-color: #292929;
+   margin-right: 15px;
+   margin-left: 15px;
+}
+.counter-btn {
+   width: 40px;
+   height: 40px;
+   cursor: pointer;
+   font-size: 16px;
+   color: #fff;
+   background-color: #292929;
+   border: none;
+}
+.card-btn {
+   font-size: 14px;
+   width: 100%;
+   padding: 16px 10px 13px;
+}
+.more {
+   font-size: 14px;
+   color: #f24841;
+   display: block;
+   text-align: center;
+   margin-top: 39px;
+   padding: 10px;
+   transition: text-decoration 0.2s linear, color 0.2s linear;
+}
+.more:hover {
+   color: rgb(212, 19, 77);
+   text-decoration: none;
+}
+.more:after {
+   content: "";
+   display: inline-block;
+   width: 25px;
+   height: 20px;
+   background: url('../img/up-arrow.svg') 100%/cover no-repeat;
+   margin-left: 14px;
+   vertical-align: middle;
+   transform: rotate(180deg);
+}
+
+/* OFFER */
+.offer {
+   padding-top: 100px;
+   padding-bottom: 100px;
+   background-color: #1a1a1a;
+   text-align: center;
+}
+.offer-link {
+   display: block;
+   color: #fff;
+   text-transform: uppercase;
+   font-size: 30px;
+   margin-bottom: 65px;
+   transition: text-decoration 0.2s linear, color 0.2s linear;
+}
+.offer-link:hover {
+   text-decoration: none;
+   color: rgb(212, 19, 77) ;
+}
+.offer-label {
+   display: block;
+   font-size: 14px;
+   margin-bottom: 22px;
+}
+.offer-phone {
+   font-size: 36px;
+   text-decoration: none;
+   color: #fff;
+   transition: color 0.2s linear;
+}
+.offer-phone:hover {
+   color: rgb(212, 19, 77);
+}
+
+/* FOOTER */
+.footer-menu {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   margin-bottom: 33px;
+}
+.footer-menu-link {
+   color: #fff;
+   text-transform: uppercase;
+   font-size: 18px;
+   transition: color 0.2s linear, text-decoration 0.2s linear;
+}
+.footer-menu-link:hover {
+   color: rgb(212, 19, 77);
+   text-decoration: none;
+}
+.footer-menu-item {
+   margin-right: 30px;
+}
+.social {
+   font-size: 16px;
+}
+.footer-info {
+   text-align: right;
+}
+.footer-label {
+   display: block;
+   font-size: 14px;
+   margin-bottom: 12px;
+}
+.footer-phone {
+   display: block;
+   text-decoration: none;
+   color: #fff;
+   font-size: 24px;
+   margin-bottom: 12px;
+   transition: color 0.2s linear;
+}
+.footer-phone:hover {
+   color: rgb(212, 19, 77);
+}
+
+/* FOOTER-white */
+.footer-white {
+   background-color: #fff;
+   color: #000;
+}
+.footer-contacts {
+   text-align: right;
+}
+.footer-developer {
+   margin-top: 12px;
+   font-size: 12px;
+}
+.footer-developer-name {
+   text-decoration: underline;
+}
+
+/* MODAL */
+.modal {
+   display: none;
+}
+.modal-title {
+   color: #292929;
+}
+.modal-input {
+   display: block;
+   width: 100%;
+   padding: 10px;
+   font-size: 18px;
+}
+.modal-btn {
+   width: 100%;
+   padding: 16px 10px 13px;
+}
+
+
+/* MEDIA */
+@media (max-width: 768px) {
+   .header {
+      text-align: center;
+   }
+   .header-contacts {
+      text-align: center;
+   }
+   .hero {
+      padding-top: 50px;
+   }
+   .hero-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+      line-height: 1.6;
+   }
+   .hero-description {
+      font-size: 16px;
+   }
+   .button {
+      padding: 20px 40px;
+   }
+   .flowers-slider {
+      margin-top: 50px;
+      margin-bottom: 50px;
+   }
+   .reviews {
+      padding-top: 50px;
+   }
+   .section-title {
+      font-size: 24px;
+   }
+   .reviews-slider {
+      margin-top: 50px;
+   }
+   .advantages {
+      padding-bottom: 50px;
+   }
+   .goods {
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+   .colors {
+      max-width: 200px;
+      margin: auto;
+   }
+   .card-label {
+      margin: 20px auto;
+      display: block;
+   }
+   .offer {
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+   .offer-link {
+      font-size: 24px;
+   }
+   .offer-phone {
+      font-size: 24px;
+   }
+   .footer-info {
+      text-align: left;
+   }
+   .footer-white {
+      text-align: center;
+   }
+   .footer-contacts {
+      text-align: center;
+   }
+}
+
+@media (max-width: 576px) {
+   .offer,
+   .footer-info,
+   .offer-title {
+      text-align: left;
+      font-size: 20px;
+   }
+}
